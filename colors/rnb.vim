@@ -35,24 +35,24 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TabLineSel ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
     hi Title ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
     hi CursorLine ctermbg=8 ctermfg=122 cterm=NONE guibg=#585b70 guifg=#5ee7d8 gui=NONE
-    hi LineNr ctermbg=17 ctermfg=80 cterm=NONE guibg=#1c1c41 guifg=#57c5c6 gui=NONE
-    hi CursorLineNr ctermbg=17 ctermfg=80 cterm=NONE guibg=#1c1c41 guifg=#57c5c6 gui=NONE
+    hi LineNr ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
+    hi CursorLineNr ctermbg=8 ctermfg=122 cterm=NONE guibg=#585b70 guifg=#5ee7d8 gui=NONE
     hi helpLeadBlank ctermbg=17 ctermfg=122 cterm=NONE guibg=#1c1c41 guifg=#5ee7d8 gui=NONE
     hi helpNormal ctermbg=17 ctermfg=19 cterm=NONE guibg=#1c1c41 guifg=#0099e6 gui=NONE
-    hi Visual ctermbg=7 ctermfg=80 cterm=NONE guibg=#6c7086 guifg=#57c5c6 gui=NONE
-    hi VisualNOS ctermbg=7 ctermfg=80 cterm=NONE guibg=#6c7086 guifg=#57c5c6 gui=NONE
+    hi Visual ctermbg=8 ctermfg=122 cterm=NONE guibg=#585b70 guifg=#5ee7d8 gui=NONE
+    hi VisualNOS ctermbg=8 ctermfg=122 cterm=NONE guibg=#585b70 guifg=#5ee7d8 gui=NONE
     hi Pmenu ctermbg=17 ctermfg=25 cterm=NONE guibg=#1c1c41 guifg=#0067a5 gui=NONE
     hi PmenuSbar ctermbg=17 ctermfg=25 cterm=NONE guibg=#1c1c41 guifg=#0067a5 gui=NONE
     hi PmenuSel ctermbg=17 ctermfg=25 cterm=NONE guibg=#1c1c41 guifg=#0067a5 gui=NONE
     hi PmenuThumb ctermbg=17 ctermfg=25 cterm=NONE guibg=#1c1c41 guifg=#0067a5 gui=NONE
     hi FoldColumn ctermbg=17 ctermfg=8 cterm=NONE guibg=#1c1c41 guifg=#585b70 gui=NONE
-    hi Folded ctermbg=80 ctermfg=37 cterm=NONE guibg=#57c5c6 guifg=#00a693 gui=NONE
+    hi Folded ctermbg=17 ctermfg=215 cterm=NONE guibg=#1c1c41 guifg=#d99058 gui=NONE
     hi WildMenu ctermbg=80 ctermfg=37 cterm=NONE guibg=#57c5c6 guifg=#00a693 gui=NONE
     hi SpecialKey ctermbg=80 ctermfg=37 cterm=NONE guibg=#57c5c6 guifg=#00a693 gui=NONE
-    hi DiffAdd ctermbg=88 ctermfg=88 cterm=NONE guibg=#790914 guifg=#701c1c gui=NONE
-    hi DiffChange ctermbg=88 ctermfg=8 cterm=NONE guibg=#701c1c guifg=#585b70 gui=NONE
-    hi DiffDelete ctermbg=88 ctermfg=8 cterm=NONE guibg=#790914 guifg=#585b70 gui=NONE
-    hi DiffText ctermbg=11 ctermfg=8 cterm=NONE guibg=#ffff99 guifg=#585b70 gui=NONE
+    hi DiffAdd ctermbg=88 ctermfg=15 cterm=NONE guibg=#790914 guifg=#f8f8f8 gui=NONE
+    hi DiffChange ctermbg=88 ctermfg=11 cterm=NONE guibg=#790914 guifg=#ffff99 gui=NONE
+    hi DiffDelete ctermbg=88 ctermfg=122 cterm=NONE guibg=#790914 guifg=#5ee7d8 gui=NONE
+    hi DiffText ctermbg=88 ctermfg=215 cterm=NONE guibg=#790914 guifg=#d99058 gui=NONE
     hi IncSearch ctermbg=206 ctermfg=8 cterm=NONE guibg=#f77fbe guifg=#585b70 gui=NONE
     hi Search ctermbg=215 ctermfg=17 cterm=NONE guibg=#d99058 guifg=#1c1c41 gui=NONE
     hi Directory ctermbg=17 ctermfg=19 cterm=NONE guibg=#1c1c41 guifg=#0099e6 gui=NONE
@@ -101,24 +101,24 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TabLineSel ctermbg=black ctermfg=teal cterm=NONE
     hi Title ctermbg=black ctermfg=teal cterm=NONE
     hi CursorLine ctermbg=darkgray ctermfg=cyan cterm=NONE
-    hi LineNr ctermbg=black ctermfg=lightcyan cterm=NONE
-    hi CursorLineNr ctermbg=black ctermfg=lightcyan cterm=NONE
+    hi LineNr ctermbg=black ctermfg=teal cterm=NONE
+    hi CursorLineNr ctermbg=darkgray ctermfg=cyan cterm=NONE
     hi helpLeadBlank ctermbg=black ctermfg=cyan cterm=NONE
     hi helpNormal ctermbg=black ctermfg=lightblue cterm=NONE
-    hi Visual ctermbg=gray ctermfg=lightcyan cterm=NONE
-    hi VisualNOS ctermbg=gray ctermfg=lightcyan cterm=NONE
+    hi Visual ctermbg=darkgray ctermfg=cyan cterm=NONE
+    hi VisualNOS ctermbg=darkgray ctermfg=cyan cterm=NONE
     hi Pmenu ctermbg=black ctermfg=blue cterm=NONE
     hi PmenuSbar ctermbg=black ctermfg=blue cterm=NONE
     hi PmenuSel ctermbg=black ctermfg=blue cterm=NONE
     hi PmenuThumb ctermbg=black ctermfg=blue cterm=NONE
     hi FoldColumn ctermbg=black ctermfg=darkgray cterm=NONE
-    hi Folded ctermbg=lightcyan ctermfg=teal cterm=NONE
+    hi Folded ctermbg=black ctermfg=orange cterm=NONE
     hi WildMenu ctermbg=lightcyan ctermfg=teal cterm=NONE
     hi SpecialKey ctermbg=lightcyan ctermfg=teal cterm=NONE
-    hi DiffAdd ctermbg=darkred ctermfg=red cterm=NONE
-    hi DiffChange ctermbg=red ctermfg=darkgray cterm=NONE
-    hi DiffDelete ctermbg=darkred ctermfg=darkgray cterm=NONE
-    hi DiffText ctermbg=yellow ctermfg=darkgray cterm=NONE
+    hi DiffAdd ctermbg=darkred ctermfg=white cterm=NONE
+    hi DiffChange ctermbg=darkred ctermfg=yellow cterm=NONE
+    hi DiffDelete ctermbg=darkred ctermfg=cyan cterm=NONE
+    hi DiffText ctermbg=darkred ctermfg=orange cterm=NONE
     hi IncSearch ctermbg=rose ctermfg=darkgray cterm=NONE
     hi Search ctermbg=orange ctermfg=black cterm=NONE
     hi Directory ctermbg=black ctermfg=lightblue cterm=NONE

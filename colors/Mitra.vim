@@ -28,7 +28,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Type ctermbg=17 ctermfg=215 cterm=NONE guibg=#1c1c41 guifg=#d99058 gui=NONE
     hi Underlined ctermbg=122 ctermfg=8 cterm=NONE guibg=#5ee7d8 guifg=#585b70 gui=NONE
     hi StatusLine ctermbg=19 ctermfg=17 cterm=NONE guibg=#0099e6 guifg=#1c1c41 gui=NONE
-    hi StatusLineNC ctermbg=19 ctermfg=17 cterm=NONE guibg=#0099e6 guifg=#1c1c41 gui=NONE
+    hi StatusLineNC ctermbg=25 ctermfg=17 cterm=NONE guibg=#77AAFF guifg=#1c1c41 gui=NONE
     hi VertSplit ctermbg=17 ctermfg=206 cterm=NONE guibg=#1c1c41 guifg=#f77fbe gui=NONE
     hi TabLine ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
     hi TabLineFill ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
@@ -94,7 +94,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Type ctermbg=black ctermfg=orange cterm=NONE
     hi Underlined ctermbg=cyan ctermfg=darkgray cterm=NONE
     hi StatusLine ctermbg=lightblue ctermfg=black cterm=NONE
-    hi StatusLineNC ctermbg=lightblue ctermfg=black cterm=NONE
+    hi StatusLineNC ctermbg=blue ctermfg=black cterm=NONE
     hi VertSplit ctermbg=black ctermfg=rose cterm=NONE
     hi TabLine ctermbg=black ctermfg=teal cterm=NONE
     hi TabLineFill ctermbg=black ctermfg=teal cterm=NONE

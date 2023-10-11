@@ -27,14 +27,14 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Todo ctermbg=17 ctermfg=88 cterm=NONE guibg=#1c1c41 guifg=#790914 gui=NONE
     hi Type ctermbg=17 ctermfg=215 cterm=NONE guibg=#1c1c41 guifg=#d99058 gui=NONE
     hi Underlined ctermbg=122 ctermfg=8 cterm=NONE guibg=#5ee7d8 guifg=#585b70 gui=NONE
-    hi StatusLine ctermbg=19 ctermfg=8 cterm=NONE guibg=#0099e6 guifg=#585b70 gui=NONE
-    hi StatusLineNC ctermbg=19 ctermfg=8 cterm=NONE guibg=#0099e6 guifg=#585b70 gui=NONE
+    hi StatusLine ctermbg=19 ctermfg=17 cterm=NONE guibg=#0099e6 guifg=#1c1c41 gui=NONE
+    hi StatusLineNC ctermbg=19 ctermfg=17 cterm=NONE guibg=#0099e6 guifg=#1c1c41 gui=NONE
     hi VertSplit ctermbg=17 ctermfg=206 cterm=NONE guibg=#1c1c41 guifg=#f77fbe gui=NONE
     hi TabLine ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
     hi TabLineFill ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
     hi TabLineSel ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
     hi Title ctermbg=17 ctermfg=37 cterm=NONE guibg=#1c1c41 guifg=#00a693 gui=NONE
-    hi CursorLine ctermbg=17 ctermfg=11 cterm=NONE guibg=#1c1c41 guifg=#ffff00 gui=NONE
+    hi CursorLine ctermbg=8 ctermfg=122 cterm=NONE guibg=#585b70 guifg=#5ee7d8 gui=NONE
     hi LineNr ctermbg=17 ctermfg=80 cterm=NONE guibg=#1c1c41 guifg=#57c5c6 gui=NONE
     hi CursorLineNr ctermbg=17 ctermfg=80 cterm=NONE guibg=#1c1c41 guifg=#57c5c6 gui=NONE
     hi helpLeadBlank ctermbg=17 ctermfg=122 cterm=NONE guibg=#1c1c41 guifg=#5ee7d8 gui=NONE
@@ -52,7 +52,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi DiffAdd ctermbg=88 ctermfg=88 cterm=NONE guibg=#790914 guifg=#701c1c gui=NONE
     hi DiffChange ctermbg=88 ctermfg=8 cterm=NONE guibg=#701c1c guifg=#585b70 gui=NONE
     hi DiffDelete ctermbg=88 ctermfg=8 cterm=NONE guibg=#790914 guifg=#585b70 gui=NONE
-    hi DiffText ctermbg=11 ctermfg=8 cterm=NONE guibg=#ffff00 guifg=#585b70 gui=NONE
+    hi DiffText ctermbg=11 ctermfg=8 cterm=NONE guibg=#ffff99 guifg=#585b70 gui=NONE
     hi IncSearch ctermbg=206 ctermfg=8 cterm=NONE guibg=#f77fbe guifg=#585b70 gui=NONE
     hi Search ctermbg=215 ctermfg=17 cterm=NONE guibg=#d99058 guifg=#1c1c41 gui=NONE
     hi Directory ctermbg=17 ctermfg=19 cterm=NONE guibg=#1c1c41 guifg=#0099e6 gui=NONE
@@ -93,14 +93,14 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Todo ctermbg=black ctermfg=darkred cterm=NONE
     hi Type ctermbg=black ctermfg=orange cterm=NONE
     hi Underlined ctermbg=cyan ctermfg=darkgray cterm=NONE
-    hi StatusLine ctermbg=lightblue ctermfg=darkgray cterm=NONE
-    hi StatusLineNC ctermbg=lightblue ctermfg=darkgray cterm=NONE
+    hi StatusLine ctermbg=lightblue ctermfg=black cterm=NONE
+    hi StatusLineNC ctermbg=lightblue ctermfg=black cterm=NONE
     hi VertSplit ctermbg=black ctermfg=rose cterm=NONE
     hi TabLine ctermbg=black ctermfg=teal cterm=NONE
     hi TabLineFill ctermbg=black ctermfg=teal cterm=NONE
     hi TabLineSel ctermbg=black ctermfg=teal cterm=NONE
     hi Title ctermbg=black ctermfg=teal cterm=NONE
-    hi CursorLine ctermbg=black ctermfg=yellow cterm=NONE
+    hi CursorLine ctermbg=darkgray ctermfg=cyan cterm=NONE
     hi LineNr ctermbg=black ctermfg=lightcyan cterm=NONE
     hi CursorLineNr ctermbg=black ctermfg=lightcyan cterm=NONE
     hi helpLeadBlank ctermbg=black ctermfg=cyan cterm=NONE
@@ -152,7 +152,7 @@ hi link CursorIM Cursor
 hi link Terminal Normal
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = [ '#1c1c41', '#790914', '#008000', '#d99058', '#0067a5', '#fe28a2', '#57c5c6', '#6c7086', '#585b70', '#701c1c', '#008000', '#ffff00', '#0099e6', '#f77fbe', '#5ee7d8', '#f8f8f8' ]
+    let g:terminal_ansi_colors = [ '#1c1c41', '#790914', '#008000', '#d99058', '#0067a5', '#fe28a2', '#57c5c6', '#6c7086', '#585b70', '#701c1c', '#008000', '#ffff99', '#0099e6', '#f77fbe', '#5ee7d8', '#f8f8f8' ]
 endif
 
 " Generated with RNB (https://github.com/romainl/vim-rnb)

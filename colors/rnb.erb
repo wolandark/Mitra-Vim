@@ -40,11 +40,11 @@
     # Make sure the name of your colorscheme is unique and attractive.
     # The description should fit in a single line with no linefeed.
     information = {
-        author:      "foo",
-        email:       "foo@foo.foo",
-        name:        "rnb",
-        description: "Lorem ipsum dolor sit amet.",
-        webpage:     "http://www.example.com"
+        author:      "wolandark",
+        email:       "contact-woland@proton.me",
+        name:        "Mitra-Vim",
+        description: "A vim colorscheme based on the Persian palette",
+        webpage:     "wolandark.github.io"
     }
 
     # Step 3: colors
@@ -64,7 +64,7 @@
     darkred     = ["#790914", 88, "darkred"]
     red         = ["#701c1c", 88,  "red"]
     orange      = ["#d99058", 215, "orange"]
-    blue        = ["#0067a5", 25,  "blue"]
+    blue        = ["#77AAFF", 25,  "blue"]
     lightblue   = ["#0099e6", 19,  "lightblue"]
     rose        = ["#f77fbe", 206, "rose"]
     pink        = ["#fe28a2", 200, "pink"]
@@ -156,33 +156,33 @@
         [ "Folded", black, orange, "NONE" ],
         [ "WildMenu", lightcyan, teal, "NONE" ],
         [ "SpecialKey", lightcyan, teal, "NONE" ],
-        [ "DiffAdd", darkred, white, "NONE" ],
-        [ "DiffChange", darkred, yellow, "NONE" ],
-        [ "DiffDelete", darkred, cyan, "NONE" ],
-        [ "DiffText", darkred, orange, "NONE" ],
+        [ "DiffAdd", black, white, "NONE" ],
+        [ "DiffChange", black, yellow, "NONE" ],
+        [ "DiffDelete", black, red, "NONE" ],
+        [ "DiffText", black, orange, "NONE" ],
         [ "IncSearch", rose, darkgray, "NONE" ],
         [ "Search", orange, black, "NONE" ],
         [ "Directory", black, lightblue, "NONE" ],
         [ "MatchParen", black, orange, "NONE" ],
-        [ "SpellBad", black, darkred, "NONE", red ],
-        [ "SpellCap", black, darkred, "NONE", lightblue ],
+        [ "SpellBad", black, darkred, "NONE" ],
+        [ "SpellCap", black, darkred, "NONE" ],
         [ "SpellLocal", black, darkred, "NONE"],
-        [ "SpellRare", black, darkred, "NONE", cyan ],
+        [ "SpellRare", black, darkred, "NONE"],
         [ "ColorColumn", darkgray, white, "NONE" ],
-        [ "SignColumn", black, darkred, "NONE" ],
+        [ "SignColumn", black, orange, "NONE" ],
         [ "ErrorMsg", black, darkred, "NONE" ],
-        [ "ModeMsg", black, darkred, "NONE" ],
-        [ "MoreMsg", black, darkred, "NONE" ],
+        [ "ModeMsg", black, orange, "NONE" ],
+        [ "MoreMsg", black, yellow, "NONE" ],
         [ "Question", black, darkred, "NONE" ],
         [ "WarningMsg", "Error" ],
-        [ "Cursor", black, darkred, "NONE" ],
+        [ "Cursor", black, blue, "NONE" ],
         [ "CursorIM", "Cursor" ],
-        [ "CursorColumn", black, darkred, "NONE" ],
-        [ "QuickFixLine", black, darkred, "NONE" ],
+        [ "CursorColumn", darkgray, white, "NONE" ],
+        [ "QuickFixLine", black, lightblue, "NONE" ],
         [ "Terminal", "Normal" ],
-        [ "Conceal", black, darkred, "NONE" ],
-        [ "ToolbarLine", black, darkred, "NONE" ],
-        [ "ToolbarButton", black, darkred, "NONE" ],
+        [ "Conceal", black, teal, "NONE" ],
+        [ "ToolbarLine", black, cyan, "NONE" ],
+        [ "ToolbarButton", black, lightcyan, "NONE" ],
         [ "debugPC", black, darkred, "NONE" ],
         [ "debugBreakpoint", black, darkred, "NONE" ],
     ]
@@ -221,21 +221,21 @@
     # While you are certainly free to make colors 0 to 7 shades of blue,
     # this will inevitably cause usability issues so… be careful.
     terminal_ansi_colors = [
-        black,
         darkred,
-        darkgreen,
+        red,
         orange,
         blue,
-        pink,
-        lightcyan,
-        gray,
-        darkgray,
-        red,
-        darkgreen,
-        yellow,
         lightblue,
         rose,
+        pink,
+        darkgreen,
+        teal,
         cyan,
+        lightcyan,
+        black,
+        gray,
+        darkgray,
+        yellow,
         white
     ]
 

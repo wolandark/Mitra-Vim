@@ -5,6 +5,7 @@
 " Last Change: 2024-01-24
 
 hi clear
+set background=dark 
 
 if exists("syntax_on")
   syntax reset

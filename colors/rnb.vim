@@ -2,7 +2,7 @@
 " Author:      wolandark (contact-woland@proton.me)
 " Webpage:     wolandark.github.io
 " Description: A vim colorscheme based on the Persian palette
-" Last Change: 2023-10-31
+" Last Change: 2024-01-24
 
 hi clear
 
@@ -16,6 +16,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Normal ctermbg=17 ctermfg=15 cterm=NONE guibg=#181825 guifg=#f8f8f8 gui=NONE
     hi Include ctermbg=17 ctermfg=200 cterm=NONE guibg=#181825 guifg=#fe28a2 gui=NONE
     hi Conditional ctermbg=17 ctermfg=200 cterm=NONE guibg=#181825 guifg=#fe28a2 gui=NONE
+    hi shConditional ctermbg=17 ctermfg=215 cterm=NONE guibg=#181825 guifg=#f99058 gui=NONE
     hi NonText ctermbg=17 ctermfg=8 cterm=NONE guibg=#181825 guifg=#585b70 gui=NONE
     hi Operator ctermbg=17 ctermfg=206 cterm=NONE guibg=#181825 guifg=#f77fbe gui=NONE
     hi Comment ctermbg=17 ctermfg=8 cterm=NONE guibg=#181825 guifg=#585b70 gui=NONE
@@ -85,6 +86,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Normal ctermbg=black ctermfg=white cterm=NONE
     hi Include ctermbg=black ctermfg=pink cterm=NONE
     hi Conditional ctermbg=black ctermfg=pink cterm=NONE
+    hi shConditional ctermbg=black ctermfg=orange cterm=NONE
     hi NonText ctermbg=black ctermfg=darkgray cterm=NONE
     hi Operator ctermbg=black ctermfg=rose cterm=NONE
     hi Comment ctermbg=black ctermfg=darkgray cterm=NONE

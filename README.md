@@ -3,7 +3,7 @@ A colorscheme (in the making) based on the Persian color palette <br>
 Made using the one and only RNB
 
 # Example JS Code
-![image](https://github.com/wolandark/Mitra-Vim/assets/107309764/a4bf81b1-32d6-47ec-a621-542fcf2c0b47)
+![image](https://github.com/wolandark/Mitra-Vim/assets/107309764/415ab9c5-e07d-4030-8e7c-fd04b6e87692)
 
 ### Setup
 Your `TERM` variable must report `xterm-256color`. Use a true color (termgui) capable terminal. <br>

@@ -5,7 +5,6 @@
 " Last Change: 2024-01-24
 
 hi clear
-set background=dark
 
 if exists("syntax_on")
   syntax reset
@@ -15,8 +14,8 @@ let colors_name = "mitra-vim"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Normal ctermbg=17 ctermfg=15 cterm=NONE guibg=#1e1e2e guifg=#f8f8f8 gui=NONE
-    hi Include ctermbg=17 ctermfg=200 cterm=NONE guibg=#1e1e2e guifg=#fe28a2 gui=NONE
-    hi Conditional ctermbg=17 ctermfg=200 cterm=NONE guibg=#1e1e2e guifg=#fe28a2 gui=NONE
+    hi Include ctermbg=17 ctermfg=200 cterm=NONE guibg=#1e1e2e guifg=#f5c2e7 gui=NONE
+    hi Conditional ctermbg=17 ctermfg=200 cterm=NONE guibg=#1e1e2e guifg=#f5c2e7 gui=NONE
     hi NonText ctermbg=17 ctermfg=8 cterm=NONE guibg=#1e1e2e guifg=#585b70 gui=NONE
     hi Operator ctermbg=17 ctermfg=206 cterm=NONE guibg=#1e1e2e guifg=#f77fbe gui=NONE
     hi Comment ctermbg=17 ctermfg=8 cterm=NONE guibg=#1e1e2e guifg=#585b70 gui=NONE
@@ -25,7 +24,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Identifier ctermbg=17 ctermfg=215 cterm=NONE guibg=#1e1e2e guifg=#f99058 gui=NONE
     hi Ignore ctermbg=17 ctermfg=8 cterm=NONE guibg=#1e1e2e guifg=#585b70 gui=NONE
     hi PreProc ctermbg=17 ctermfg=206 cterm=NONE guibg=#1e1e2e guifg=#f77fbe gui=NONE
-    hi Special ctermbg=17 ctermfg=200 cterm=NONE guibg=#1e1e2e guifg=#fe28a2 gui=NONE
+    hi Special ctermbg=17 ctermfg=200 cterm=NONE guibg=#1e1e2e guifg=#f5c2e7 gui=NONE
     hi Statement ctermbg=17 ctermfg=122 cterm=NONE guibg=#1e1e2e guifg=#00ccff gui=NONE
     hi String ctermbg=17 ctermfg=11 cterm=NONE guibg=#1e1e2e guifg=#f5e0dc gui=NONE
     hi Todo ctermbg=17 ctermfg=88 cterm=NONE guibg=#1e1e2e guifg=#790914 gui=NONE
@@ -159,7 +158,7 @@ hi link CursorIM Cursor
 hi link Terminal Normal
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = [ '#790914', '#701c1c', '#f99058', '#77AAFF', '#0099e6', '#f77fbe', '#fe28a2', '#008000', '#00a693', '#00ccff', '#57c5c6', '#1e1e2e', '#6c7086', '#585b70', '#f5e0dc', '#f8f8f8' ]
+    let g:terminal_ansi_colors = [ '#790914', '#701c1c', '#f99058', '#77AAFF', '#0099e6', '#f77fbe', '#f5c2e7', '#008000', '#00a693', '#00ccff', '#57c5c6', '#1e1e2e', '#6c7086', '#585b70', '#f5e0dc', '#f8f8f8' ]
 endif
 
 " Generated with RNB (https://github.com/romainl/vim-rnb)

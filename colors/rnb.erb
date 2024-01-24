@@ -1,0 +1,186 @@
+<%
+    information = {
+        author:      "wolandark",
+        email:       "contact-woland@proton.me",
+        name:        "Mitra-Vim",
+        description: "A vim colorscheme based on the Persian palette",
+        webpage:     "wolandark.github.io"
+    }
+
+    darkred     = ["#790914", 88, "darkred"]
+    red         = ["#701c1c", 88,  "red"]
+    orange      = ["#f99058", 215, "orange"]
+    blue        = ["#77AAFF", 25,  "blue"]
+    lightblue   = ["#0099e6", 19,  "lightblue"]
+    rose        = ["#f77fbe", 206, "rose"]
+    pink        = ["#f5c2e7", 200, "pink"]
+    darkgreen   = ["#008000", 2,   "darkgreen"]
+    teal        = ["#00a693", 37,  "teal"]
+    cyan        = ["#00ccff", 122,  "cyan"]
+    lightcyan   = ["#57c5c6", 80,  "lightcyan"]
+    black       = ["#1e1e2e", 17,   "black"]
+    gray        = ["#6c7086", 7,   "gray"]
+    darkgray    = ["#585b70", 8,   "darkgray"]
+    yellow      = ["#f5e0dc", 11,  "yellow"]
+    white       = ["#f8f8f8", 15,  "white"]
+
+    
+    highlights = [
+        [ "Normal", black, white, "NONE" ],
+        [ "Include", black, pink, "NONE" ],
+        [ "Conditional", black, pink, "NONE" ],
+        [ "NonText", black, darkgray, "NONE" ],
+        [ "Operator", black, rose, "NONE" ],
+        [ "EndOfBuffer","NonText" ],
+        [ "Comment", black, darkgray, "NONE" ],
+        [ "Constant", black, lightblue, "NONE" ],
+        [ "Error", black, darkred, "NONE" ],
+        [ "Identifier", black, orange, "NONE" ],
+        [ "Ignore", black, darkgray, "NONE" ],
+        [ "PreProc", black, rose, "NONE" ],
+        [ "Special", black, pink, "NONE" ],
+        [ "Statement", black, cyan, "NONE" ],
+        [ "String", black, yellow, "NONE" ],
+        [ "Number", "Constant" ],
+        [ "Todo", black, darkred, "NONE" ],
+        [ "Type", black, cyan, "NONE" ],
+        [ "Underlined", cyan, darkgray, "NONE" ],
+        [ "StatusLine", lightblue, black, "NONE" ],
+        [ "StatusLineNC", blue, black, "NONE" ],
+        [ "StatusLineTerm", "StatusLine" ],
+        [ "StatusLineTermNC", "StatusLineNC" ],
+        [ "VertSplit", black, rose, "NONE" ],
+        [ "TabLine", black, teal, "NONE" ],
+        [ "TabLineFill", black, teal, "NONE" ],
+        [ "TabLineSel", black, teal, "NONE" ],
+        [ "Title", black, teal, "NONE" ],
+        [ "CursorLine", darkgray, cyan, "NONE" ],
+        [ "LineNr", black, blue, "NONE" ],
+        [ "CursorLineNr", darkgray, cyan, "NONE" ],
+        [ "helpLeadBlank", black, cyan, "NONE" ],
+        [ "helpNormal", black, lightblue, "NONE" ],
+        [ "Visual", darkgray, cyan, "NONE" ],
+        [ "VisualNOS", darkgray, cyan, "NONE" ],
+        [ "Pmenu", black, blue, "NONE" ],
+        [ "PmenuSbar", black, blue, "NONE" ],
+        [ "PmenuSel", black, blue, "NONE" ],
+        [ "PmenuThumb", black, blue, "NONE" ],
+        [ "FoldColumn", black, darkgray, "NONE" ],
+        [ "Folded", black, lightblue, "NONE" ],
+        [ "WildMenu", lightcyan, teal, "NONE" ],
+        [ "SpecialKey", lightcyan, teal, "NONE" ],
+        [ "DiffAdd", black, white, "NONE" ],
+        [ "DiffChange", black, yellow, "NONE" ],
+        [ "DiffDelete", black, red, "NONE" ],
+        [ "DiffText", black, orange, "NONE" ],
+        [ "IncSearch", rose, darkgray, "NONE" ],
+        [ "Search", orange, black, "NONE" ],
+        [ "Directory", black, lightblue, "NONE" ],
+        [ "MatchParen", black, orange, "NONE" ],
+        [ "SpellBad", black, darkred, "NONE" ],
+        [ "SpellCap", black, darkred, "NONE" ],
+        [ "SpellLocal", black, darkred, "NONE"],
+        [ "SpellRare", black, darkred, "NONE"],
+        [ "ColorColumn", darkgray, white, "NONE" ],
+        [ "SignColumn", black, orange, "NONE" ],
+        [ "ErrorMsg", black, darkred, "NONE" ],
+        [ "ModeMsg", black, orange, "NONE" ],
+        [ "MoreMsg", black, yellow, "NONE" ],
+        [ "Question", black, darkred, "NONE" ],
+        [ "WarningMsg", "Error" ],
+        [ "Cursor", black, blue, "NONE" ],
+        [ "CursorIM", "Cursor" ],
+        [ "CursorColumn", darkgray, white, "NONE" ],
+        [ "QuickFixLine", black, lightblue, "NONE" ],
+        [ "Terminal", "Normal" ],
+        [ "Conceal", black, teal, "NONE" ],
+        [ "ToolbarLine", black, cyan, "NONE" ],
+        [ "ToolbarButton", black, lightcyan, "NONE" ],
+        [ "debugPC", black, darkred, "NONE" ],
+        [ "debugBreakpoint", black, darkred, "NONE" ],
+    ]
+
+    terminal_ansi_colors = [
+        darkred,
+        red,
+        orange,
+        blue,
+        lightblue,
+        rose,
+        pink,
+        darkgreen,
+        teal,
+        cyan,
+        lightcyan,
+        black,
+        gray,
+        darkgray,
+        yellow,
+        white
+    ]
+
+    # Step 5: generation
+    #
+    # From a separate shell:
+    #
+    #     $ erb -T - bar.erb > bar.vim
+    #
+    # From Vim:
+    #
+    #     :!erb -T - % > %<.vim
+    #
+    # If this template comes with a Makefile, you can do it from a separate shell,
+    # with the make program:
+    #
+    #     $ make
+    # You don't need to edit anything beyond this line.
+-%>
+" <%= information[:name] %>.vim -- Vim color scheme.
+" Author:      <%= information[:author] %> (<%= information[:email] %>)
+" Webpage:     <%= information[:webpage] %>
+" Description: <%= information[:description] %>
+" Last Change: <%= Time.new.strftime "%Y-%m-%d" %>
+
+hi clear
+
+if exists("syntax_on")
+  syntax reset
+endif
+
+let colors_name = "<%= information[:name].downcase %>"
+
+if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
+<% highlights.each do |highlight| -%>
+<% if highlight.length == 4 -%>
+    hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][1] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][1] %> cterm=<%= highlight[3] %> guibg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][0] %> guifg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][0] %> gui=<%= highlight[3] %>
+<% elsif highlight.length > 4 -%>
+    hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][1] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][1] %> cterm=<%= highlight[3] %> guibg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][0] %> guifg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][0] %> gui=<%= highlight[3] %> guisp=<%= highlight[4].kind_of?(String) ? highlight[4] : highlight[4][0] %>
+<% end -%>
+<% end -%>
+
+elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
+    set t_Co=16
+<%= '' %>
+<% highlights.each do |highlight| -%>
+<% if highlight.length > 2 -%>
+    hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][2] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][2] %> cterm=<%= highlight[3] %>
+<% end -%>
+<% end -%>
+endif
+<% links = highlights.select do |highlight| -%>
+<% highlight.length == 2 -%>
+<% end -%>
+<% if links.length > 0 -%>
+<%= '' %>
+<% links.each do |link| -%>
+hi link <%= link[0] %> <%= link[1] %>
+<% end -%>
+<% end -%>
+<% if terminal_ansi_colors.length == 16 -%>
+<%= '' %>
+if (has('termguicolors') && &termguicolors) || has('gui_running')
+    let g:terminal_ansi_colors = [ <%= terminal_ansi_colors.map { |color| "'#{color[0]}'" }.join(', ') %> ]
+endif
+<% end -%>
+
+" Generated with RNB (https://github.com/romainl/vim-rnb)

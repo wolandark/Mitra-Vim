@@ -23,8 +23,20 @@ endif
 ```
 
 ### Installation
+#### Plug
 ```
 Plug 'wolandark/Mitra-Vim'
+```
+#### Lazy
+```
+{
+	"wolandark/Mitra-Vim",
+	-- optional: activate colorscheme
+	config = function()
+		vim.cmd.colorscheme('Mitra')
+	end
+},
+
 ```
 or use your favprite plugin manager.
 

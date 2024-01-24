@@ -1,6 +1,5 @@
 # Mitra-Vim
-A colorscheme (in the making) based on the Persian color palette <br> 
-Made using the one and only RNB
+A colorscheme based on the Persian color palette <br> 
 
 # Example JS Code
 ![image](https://github.com/wolandark/Mitra-Vim/assets/107309764/415ab9c5-e07d-4030-8e7c-fd04b6e87692)

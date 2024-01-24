@@ -25,7 +25,7 @@ endif
 
 ### Installation
 ```
-git clone --depth 1 https://github.com/wolandark/Mitra-Vim.git ~/.vim/
+git clone --depth 1 https://github.com/wolandark/Mitra-Vim.git ~/.vim/colors/
 ```
 or use your favprite plugin manager.
 

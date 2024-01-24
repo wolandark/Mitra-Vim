@@ -23,4 +23,12 @@ if &term =~ '256color'
 endif
 ```
 
+### Installation
+```
+git clone --depth 1 https://github.com/wolandark/Mitra-Vim.git ~/.vim/
+```
+or use your favprite plugin manager.
+
 ### PR & issues are welcomed
+
+Made with the excellent [vim-rnb](https://github.com/romainl/vim-rnb)

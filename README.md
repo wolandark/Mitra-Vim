@@ -38,7 +38,7 @@ Plug 'wolandark/Mitra-Vim'
 },
 
 ```
-or use your favprite plugin manager.
+or use your favorite plugin manager.
 
 ### PR & issues are welcomed
 

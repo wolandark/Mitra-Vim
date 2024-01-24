@@ -8,7 +8,7 @@ A colorscheme based on the Persian color palette <br>
 Your `TERM` variable must report `xterm-256color`. Use a true color (termgui) capable terminal. <br>
 Proper settings in `~/.vimrc` are also needed.
 
-```
+``` vim
 set background=dark
 
 if &term =~ '256color'
@@ -24,11 +24,11 @@ endif
 
 ### Installation
 #### Plug
-```
+``` lua
 Plug 'wolandark/Mitra-Vim'
 ```
 #### Lazy
-```
+``` lua
 {
 	"wolandark/Mitra-Vim",
 	-- optional: activate colorscheme

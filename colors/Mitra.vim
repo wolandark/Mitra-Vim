@@ -2,10 +2,9 @@
 " Author:      wolandark (contact-woland@proton.me)
 " Webpage:     wolandark.github.io
 " Description: A vim colorscheme based on the Persian palette
-" Last Change: 2024-01-24
+" Last Change: 2024-02-28
 
 hi clear
-set background=dark 
 
 if exists("syntax_on")
   syntax reset
@@ -46,8 +45,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Visual ctermbg=8 ctermfg=122 cterm=NONE guibg=#585b70 guifg=#00ccff gui=NONE
     hi VisualNOS ctermbg=8 ctermfg=122 cterm=NONE guibg=#585b70 guifg=#00ccff gui=NONE
     hi Pmenu ctermbg=17 ctermfg=25 cterm=NONE guibg=#1e1e2e guifg=#77AAFF gui=NONE
-    hi PmenuSbar ctermbg=17 ctermfg=25 cterm=NONE guibg=#1e1e2e guifg=#77AAFF gui=NONE
-    hi PmenuSel ctermbg=17 ctermfg=25 cterm=NONE guibg=#1e1e2e guifg=#77AAFF gui=NONE
+    hi PmenuSbar ctermbg=25 ctermfg=25 cterm=NONE guibg=#77AAFF guifg=#77AAFF gui=NONE
+    hi PmenuSel ctermbg=25 ctermfg=17 cterm=NONE guibg=#77AAFF guifg=#1e1e2e gui=NONE
+    hi CocMenuSel ctermbg=25 ctermfg=17 cterm=NONE guibg=#77AAFF guifg=#1e1e2e gui=NONE
     hi PmenuThumb ctermbg=17 ctermfg=25 cterm=NONE guibg=#1e1e2e guifg=#77AAFF gui=NONE
     hi FoldColumn ctermbg=17 ctermfg=8 cterm=NONE guibg=#1e1e2e guifg=#585b70 gui=NONE
     hi Folded ctermbg=17 ctermfg=19 cterm=NONE guibg=#1e1e2e guifg=#0099e6 gui=NONE
@@ -115,8 +115,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Visual ctermbg=darkgray ctermfg=cyan cterm=NONE
     hi VisualNOS ctermbg=darkgray ctermfg=cyan cterm=NONE
     hi Pmenu ctermbg=black ctermfg=blue cterm=NONE
-    hi PmenuSbar ctermbg=black ctermfg=blue cterm=NONE
-    hi PmenuSel ctermbg=black ctermfg=blue cterm=NONE
+    hi PmenuSbar ctermbg=blue ctermfg=blue cterm=NONE
+    hi PmenuSel ctermbg=blue ctermfg=black cterm=NONE
+    hi CocMenuSel ctermbg=blue ctermfg=black cterm=NONE
     hi PmenuThumb ctermbg=black ctermfg=blue cterm=NONE
     hi FoldColumn ctermbg=black ctermfg=darkgray cterm=NONE
     hi Folded ctermbg=black ctermfg=lightblue cterm=NONE

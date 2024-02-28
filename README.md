@@ -1,8 +1,9 @@
 # Mitra-Vim
 A colorscheme based on the Persian color palette <br> 
 
-# Example JS Code
-![image](https://github.com/wolandark/Mitra-Vim/assets/107309764/415ab9c5-e07d-4030-8e7c-fd04b6e87692)
+<div>
+	<img src="https://github.com/wolandark/Mitra-Vim/assets/107309764/600ddcda-a351-4e51-ba95-5bf6d0318550" style="width:50%">
+</div>
 
 ### Setup
 Your `TERM` variable must report `xterm-256color`. Use a true color (termgui) capable terminal. <br>

@@ -18,7 +18,7 @@ if &term =~ '256color'
 		let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 		set termguicolors
 		set mouse=a
-		colorscheme [colorscheme name]
+		colorscheme Mitra
 	endif
 endif
 ```

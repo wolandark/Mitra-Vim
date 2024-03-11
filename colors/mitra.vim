@@ -10,7 +10,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "mitra-vim"
+let colors_name = "mitra"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Normal ctermbg=17 ctermfg=15 cterm=NONE guibg=#1e1e2e guifg=#f8f8f8 gui=NONE

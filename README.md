@@ -1,5 +1,6 @@
 # Mitra-Vim
-A colorscheme based on the Persian color palette <br> 
+A colorscheme based on the Persian color palette. <br>The persian palette, is the collection of colors that are usually found in various traditional Persian arts and crafts <br> 
+for more information, see [here](https://github.com/alijsh/persian-colors). <br> 
 
 <div>
 	<img src="https://github.com/wolandark/Mitra-Vim/assets/107309764/600ddcda-a351-4e51-ba95-5bf6d0318550" style="width:50%">
